@@ -1,0 +1,19 @@
+####################################
+         Le type logique
+####################################
+
+sc_logic u; u = 'Z';      // True
+sc_logic u = 1;           // False
+sc_logic u = sc_logic(1); // True
+
+sc_logic u(X);            // False
+sc_logic u('X');          // True
+
+u = 2;                    // u = 'Z';
+u = 3;                    // u = 'X';
+u = false;                // u = 0;
+
+bool b;
+sc_logic u(0);
+b = u; //False
+b = u.to_bool();//to_bool, to_char, is_01 etc

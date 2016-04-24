@@ -1,9 +1,9 @@
-SYSTEMC   ?= Users/zhudan901019/Hao/SE207/systemc-2.3.1
+#SYSTEMC   ?= Users/zhudan901019/Hao/SE207/systemc-2.3.1
 ARCH      = 
 
-CPPFLAGS  =  -I/$(SYSTEMC)/include
+CPPFLAGS  =  -I/$(SYSTEMC_HOME)/include
 CXXFLAGS  =  -Wall -g
-LDFLAGS   =  -L/$(SYSTEMC)/lib
+LDFLAGS   =  -L/$(SYSTEMC_HOME)/lib
 LDLIBS    =  -lsystemc
 
 CXX = g++
